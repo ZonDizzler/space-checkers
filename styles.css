@@ -1,0 +1,50 @@
+#board-container {
+  display: inline-block;
+  padding: 2vmin;
+  margin: 2vmin;
+  background-image: url("images/night-sky.jpg");
+  background-size: cover;
+}
+
+.cell {
+  display: inline-block;
+  width: 10vmin;
+  height: 10vmin;
+  margin: 0px;
+}
+
+.red {
+  background-color: rgba(139, 0, 0, .5);
+
+}
+.black {
+  background-color: rgba(0, 0, 0 .5);
+}
+
+.checker {
+  margin: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.red-checker {
+/*   background-color: crimson; */  
+background-image: url("images/ufo.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
+
+.black-checker {
+  /* background-color: #333; */
+  background-image: url("images/rocket.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
