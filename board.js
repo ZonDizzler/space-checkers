@@ -1,6 +1,6 @@
 $(document).ready(function () {
   console.log('document ready');
-  const r = boardTemplate(); // Generate row HTML using rowTemplate
+  const r = renderBoard(); // Generate row HTML using rowTemplate
   $('#board-container').html(r); // Replace the content of #row-1 with the generated HTML
 
   $('.cell.black').click(function () {
