@@ -1,18 +1,19 @@
 function cellTemplate(rowNum, cellNum) {
+
+  // Determine parity of cell
   const isRed = (rowNum + cellNum) % 2 === 0;
   const cellColor = isRed ? 'red' : 'black';
 
   let checkerString = '';
   if (isRed) {
+    // There are no checkers in red cells
     checkerString = '';
   } else if (rowNum < 4) {
-
-    checkerString = '<div class="checker red-checker"></div>'
-
+    checkerString = checkerTemplate('red');
   } else if (rowNum > 5) {
-    checkerString = '<div class="checker black-checker"></div>'
+    checkerString = checkerTemplate('black');
   } else {
-    checkerString = '<div class="checker black-checker" hidden></div>'
+    checkerString = checkerTemplate('black', 'hidden');
   }
   return `
     <div id="cell-${rowNum}-${cellNum}" class="cell ${cellColor}">
@@ -21,6 +22,9 @@ function cellTemplate(rowNum, cellNum) {
   `;
 }
 
+function checkerTemplate(color, hidden) {
+  return `<div class="checker ${color}-checker" ${hidden}></div>`
+}
 
 function rowTemplate(rowNum) {
   let rowString = `<div id="row-${rowNum}" class="row">`;
