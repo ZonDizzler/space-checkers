@@ -13,7 +13,7 @@
   margin: 0px;
 }
 
-.red {
+.white {
   background-color: rgba(139, 0, 0, .5);
 
 }
@@ -28,7 +28,7 @@
   border-radius: 50%;
 }
 
-.red-checker {
+.white-checker {
 /*   background-color: crimson; */  
 background-image: url("images/ufo.png");
 background-size: contain;

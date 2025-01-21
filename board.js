@@ -19,8 +19,8 @@ function toggle(cell) {
 
 function switchColor(checker) {
   if (checker.hasClass('black-checker')) {
-    checker.removeClass('black-checker').addClass('red-checker');
+    checker.removeClass('black-checker').addClass('white-checker');
   } else {
-    checker.removeClass('red-checker').addClass('black-checker');
+    checker.removeClass('white-checker').addClass('black-checker');
   }
 }

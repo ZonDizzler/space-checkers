@@ -1,15 +1,15 @@
 function renderCell(rowNum, cellNum) {
 
   // Determine parity of cell
-  const isRed = (rowNum + cellNum) % 2 === 0;
-  const cellColor = isRed ? 'red' : 'black';
+  const isWhite = (rowNum + cellNum) % 2 === 0;
+  const cellColor = isWhite ? 'white' : 'black';
 
   let checkerString = '';
-  if (isRed) {
-    // There are no checkers in red cells
+  if (isWhite) {
+    // There are no checkers in white cells
     checkerString = '';
   } else if (rowNum < 4) {
-    checkerString = renderChecker('red');
+    checkerString = renderChecker('white');
   } else if (rowNum > 5) {
     checkerString = renderChecker('black');
   } else {
