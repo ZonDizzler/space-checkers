@@ -29,8 +29,8 @@ function renderCell(rowNum, cellNum) {
 
 function renderCheckers() {
   checkers.forEach(element => {
-    $(`#cell-${element.row}-${element.cell}`).hide();
 
+    $(`#cell-${element.row}-${element.cell}`).html(renderChecker(element.color));
   });
 }
 
