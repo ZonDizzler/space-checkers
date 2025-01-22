@@ -1,3 +1,5 @@
+var selectedChecker = undefined;
+
 let checkers = [
   { row: 1, cell: 2, color: 'white' },
   { row: 1, cell: 4, color: 'white' },
@@ -64,4 +66,9 @@ function renderBoard() {
     boardString = boardString + renderRow(rowNum);
   }
   return boardString;
+}
+
+function selectChecker() {
+  selectChecker = $(this).children().first();
+  console.log("selecting checker", selectChecker);
 }

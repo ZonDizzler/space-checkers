@@ -3,11 +3,9 @@ $(document).ready(function () {
   const r = renderBoard(); // Generate row HTML using rowTemplate
   $('#board-container').html(r); // Replace the content of #row-1 with the generated HTML
   renderCheckers();
-  $('.cell.black').click(function () {
-    toggle($(this));
-  });
+  $('.cell.black').click(selectChecker);
 });
-
+/*
 function toggle(cell) {
   const checker = cell.children().first();
   checker.toggle();
@@ -16,7 +14,7 @@ function toggle(cell) {
     switchColor(checker);
   }
 }
-
+*/
 function switchColor(checker) {
   if (checker.hasClass('black-checker')) {
     checker.removeClass('black-checker').addClass('white-checker');
