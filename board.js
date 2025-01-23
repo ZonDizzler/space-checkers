@@ -3,7 +3,7 @@ $(document).ready(function () {
   const r = renderBoard(); // Generate row HTML using rowTemplate
   $('#board-container').html(r); // Replace the content of #row-1 with the generated HTML
   renderCheckers();
-  $('.cell.black').click(selectChecker);
+  $('.checker').click(selectChecker);
 });
 /*
 function toggle(cell) {

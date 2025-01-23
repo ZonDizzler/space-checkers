@@ -43,6 +43,6 @@ function renderChecker(color, hidden) {
 }
 
 function selectChecker() {
-  selectChecker = $(this).children().first();
+  selectChecker = $(this);
   console.log("selecting checker", selectChecker);
 }
