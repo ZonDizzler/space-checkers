@@ -31,18 +31,23 @@ let checkers = [
 
 
 function renderCheckers() {
-  checkers.forEach(checker => {
+  checkers.forEach((checker, index) => {
 
-    $(`#cell-${checker.row}-${checker.cell}`).html(renderChecker(checker.color));
+    $(`#cell-${checker.row}-${checker.cell}`).html(renderChecker(checker.color, index));
   });
 }
 
 
-function renderChecker(color, hidden) {
-  return `<div class="checker ${color}-checker" ${hidden}></div>`
+function renderChecker(color, index) {
+  return `<div class="checker ${color}-checker" index="${index}"></div>`
 }
 
 function selectChecker() {
   selectChecker = $(this);
-  console.log("selecting checker", selectChecker);
+
+  checkerIndex = selectChecker.attr('index');
+
+  console.log("selecting checker", checkerIndex);
+
+
 }

@@ -13,6 +13,10 @@
   margin: 0px;
 }
 
+.selected {
+  border: 1px dashed yellow;
+}
+
 .white {
   background-color: rgba(139, 0, 0, .5);
 
@@ -34,10 +38,7 @@ background-image: url("images/ufo.png");
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
-
-
 }
-
 
 .black-checker {
   /* background-color: #333; */
@@ -45,6 +46,4 @@ background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
