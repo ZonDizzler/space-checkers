@@ -43,11 +43,18 @@ function renderChecker(color, index) {
 }
 
 function selectChecker() {
-  selectChecker = $(this);
 
-  checkerIndex = selectChecker.attr('index');
+  // Deselected the previously selected checker
+  if (!(selectedChecker === undefined)) {
+    console.log("something selected");
+    selectedChecker.parent().removeClass('selected');
+  }
+
+  selectedChecker = $(this);
+
+  const checkerIndex = selectedChecker.attr('index');
 
   console.log("selecting checker", checkerIndex);
 
-
+  selectedChecker.parent().addClass('selected');
 }
