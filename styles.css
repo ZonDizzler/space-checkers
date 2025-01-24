@@ -14,7 +14,7 @@
 }
 
 .selected {
-  border: 1px dashed yellow;
+  outline: 1px dashed yellow;
 }
 
 .white {
