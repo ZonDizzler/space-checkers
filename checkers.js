@@ -1,4 +1,4 @@
-var selectedChecker = undefined;
+let selectedChecker = undefined;
 
 let checkers = [
   { row: 1, cell: 2, color: 'white' },
